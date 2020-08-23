@@ -18,10 +18,15 @@ public class SkuSaleAttrValueServiceImpl extends ServiceImpl<SkuSaleAttrValueDao
 
     @Override
     public PageUtils queryPage(Map<String, Object> params) {
-        IPage<SkuSaleAttrValueEntity> page = this.page(
-                new Query<SkuSaleAttrValueEntity>().getPage(params),
-                new QueryWrapper<SkuSaleAttrValueEntity>()
-        );
+        IPage<SkuSaleAttrValueEntity> page = null;
+        try {
+            page = this.page(
+                    new Query<SkuSaleAttrValueEntity>().getPage(params),
+                    new QueryWrapper<SkuSaleAttrValueEntity>()
+            );
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         return new PageUtils(page);
     }

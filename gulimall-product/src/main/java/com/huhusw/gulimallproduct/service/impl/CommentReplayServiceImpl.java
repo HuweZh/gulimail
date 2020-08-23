@@ -18,10 +18,15 @@ public class CommentReplayServiceImpl extends ServiceImpl<CommentReplayDao, Comm
 
     @Override
     public PageUtils queryPage(Map<String, Object> params) {
-        IPage<CommentReplayEntity> page = this.page(
-                new Query<CommentReplayEntity>().getPage(params),
-                new QueryWrapper<CommentReplayEntity>()
-        );
+        IPage<CommentReplayEntity> page = null;
+        try {
+            page = this.page(
+                    new Query<CommentReplayEntity>().getPage(params),
+                    new QueryWrapper<CommentReplayEntity>()
+            );
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         return new PageUtils(page);
     }

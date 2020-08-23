@@ -22,7 +22,7 @@ import com.huhusw.common.utils.R;
  *
  * @author huhusw
  * @email zhw969@gmail.com
- * @date 2020-08-22 22:02:16
+ * @date 2020-08-23 14:35:49
  */
 @RestController
 @RequestMapping("gulimallproduct/spuinfo")

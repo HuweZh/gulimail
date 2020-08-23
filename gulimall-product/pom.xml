@@ -12,7 +12,7 @@
     <artifactId>gulimail-product</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>gulimail-product</name>
-    <description>鼓励商场商品微服务</description>
+    <description>谷粒商场商品微服务</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -20,6 +20,11 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.huhusw</groupId>
+            <artifactId>gulimall-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -40,16 +45,12 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <!-- mybatis-plus-->
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus</artifactId>
-            <version>3.3.1</version>
-        </dependency>
+
     </dependencies>
 
     <dependencyManagement>
         <dependencies>
+
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>

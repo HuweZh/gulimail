@@ -18,10 +18,15 @@ public class CategoryBrandRelationServiceImpl extends ServiceImpl<CategoryBrandR
 
     @Override
     public PageUtils queryPage(Map<String, Object> params) {
-        IPage<CategoryBrandRelationEntity> page = this.page(
-                new Query<CategoryBrandRelationEntity>().getPage(params),
-                new QueryWrapper<CategoryBrandRelationEntity>()
-        );
+        IPage<CategoryBrandRelationEntity> page = null;
+        try {
+            page = this.page(
+                    new Query<CategoryBrandRelationEntity>().getPage(params),
+                    new QueryWrapper<CategoryBrandRelationEntity>()
+            );
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         return new PageUtils(page);
     }
