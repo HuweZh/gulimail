@@ -1,4 +1,4 @@
-package com.huhusw.gulimailmember;
+package com.huhusw.gulimallmember;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,13 +1,13 @@
-package com.huhusw.gulimailware;
+package com.huhusw.gulimallcoupon;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GulimailWareApplication {
+public class GulimallCouponApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(GulimailWareApplication.class, args);
+        SpringApplication.run(GulimallCouponApplication.class, args);
     }
 
 }

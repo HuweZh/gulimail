@@ -40,6 +40,12 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <!-- mybatis-plus-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus</artifactId>
+            <version>3.3.1</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>

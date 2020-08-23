@@ -1,13 +1,13 @@
-package com.huhusw.gulimailmember;
+package com.huhusw.gulimallorder;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GulimailMemberApplication {
+public class GulimallOrderApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(GulimailMemberApplication.class, args);
+        SpringApplication.run(GulimallOrderApplication.class, args);
     }
 
 }

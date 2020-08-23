@@ -1,10 +1,10 @@
-package com.huhusw.gulimailorder;
+package com.huhusw.gulimallproduct;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GulimailOrderApplicationTests {
+class GulimailProductApplicationTests {
 
     @Test
     void contextLoads() {
