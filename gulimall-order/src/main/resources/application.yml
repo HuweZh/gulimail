@@ -4,6 +4,14 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: huhusw
+  cloud:
+    nacos:
+      discovery:
+        # nacos 服务的地址
+        server-addr: 127.0.0.1:8848
+  application:
+    # 在服务中心显示的名称
+    name: gulimall-order
 
 mybatis-plus:
   #  \u6620\u5C04\u6587\u4EF6\u4F4D\u7F6E
@@ -13,5 +21,6 @@ mybatis-plus:
     db-config:
       id-type: auto
 
-
+server:
+  port: 9000
 

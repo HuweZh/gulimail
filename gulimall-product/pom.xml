@@ -11,7 +11,7 @@
     <groupId>com.huhusw</groupId>
     <artifactId>gulimail-product</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>gulimail-product</name>
+    <name>gulimall-product</name>
     <description>谷粒商场商品微服务</description>
 
     <properties>

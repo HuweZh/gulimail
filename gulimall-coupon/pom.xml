@@ -11,7 +11,7 @@
     <groupId>com.huhusw</groupId>
     <artifactId>gulimail-coupon</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>gulimail-coupon</name>
+    <name>gulimall-coupon</name>
     <description>鼓励商场优惠券服务</description>
 
     <properties>
