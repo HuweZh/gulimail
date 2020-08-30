@@ -14,11 +14,11 @@ spring:
     name: gulimall-product
 
 mybatis-plus:
-  #  \u6620\u5C04\u6587\u4EF6\u4F4D\u7F6E
+  #  mapper映射文件位置
   mapper-location: classpath:/mapper/**/*.xml
-  #  \u4E3B\u952E\u81EA\u589E
   global-config:
     db-config:
+      # 设置主键自增
       id-type: auto
 
 server:

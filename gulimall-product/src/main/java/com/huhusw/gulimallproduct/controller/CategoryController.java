@@ -1,6 +1,7 @@
 package com.huhusw.gulimallproduct.controller;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,15 +32,13 @@ public class CategoryController {
     private CategoryService categoryService;
 
     /**
-     * 列表
+     * 返回分类数据的树形结构
      */
-    @RequestMapping("/list")
-    // 这里使用的是springsecurity而不是shiro,所以这个注解展示用不到
-    //@RequiresPermissions("gulimallproduct:category:list")
+    @RequestMapping("/list/tree")
     public R list(@RequestParam Map<String, Object> params){
-        PageUtils page = categoryService.queryPage(params);
+        List<CategoryEntity> entities = categoryService.listWithTree();
 
-        return R.ok().put("page", page);
+        return R.ok().put("data", entities);
     }
 
 
